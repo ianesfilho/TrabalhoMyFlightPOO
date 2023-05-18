@@ -1,6 +1,6 @@
 package pucrs.myflight.modelo;
 
-public class Aeronave {
+public class Aeronave implements Contavel{
 	private String codigo;
 	private String descricao;
 	
@@ -25,5 +25,8 @@ public class Aeronave {
 		this.descricao = descricao;
 	}
 
+	public void qtdObjetos() {
+		
+	}
 	
 }

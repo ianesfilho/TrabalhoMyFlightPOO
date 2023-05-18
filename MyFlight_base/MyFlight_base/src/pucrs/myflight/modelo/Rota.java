@@ -1,6 +1,6 @@
 package pucrs.myflight.modelo;
 
-public class Rota {
+public class Rota implements Contavel, Comparable<CiaAerea>{
 	private CiaAerea cia;
 	private Aeroporto origem;
 	private Aeroporto destino;
@@ -27,5 +27,14 @@ public class Rota {
 	
 	public Aeronave getAeronave() {
 		return aeronave;
+	}
+
+	public void qtdObjetos() {
+
+	}
+
+	@Override
+	public int compareTo(CiaAerea o) {
+		throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
 	}
 }

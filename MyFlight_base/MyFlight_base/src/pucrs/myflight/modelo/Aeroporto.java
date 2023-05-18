@@ -1,6 +1,6 @@
 package pucrs.myflight.modelo;
 
-public class Aeroporto {
+public class Aeroporto implements Contavel, Comparable<Aeroporto>{
 	private String codigo;
 	private String nome;
 	private Geo loc;
@@ -21,5 +21,14 @@ public class Aeroporto {
 	
 	public Geo getLocal() {
 		return loc;
+	}
+
+	public void qtdObjetos() {
+
+	}
+
+	@Override
+	public int compareTo(Aeroporto o) {
+		throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
 	}
 }
